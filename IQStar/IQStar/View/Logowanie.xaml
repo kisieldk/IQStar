@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="IQStar.View.Logowanie">
+  <StackLayout Padding="10" Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+    <Entry Placeholder="login" FontSize="26" MinimumWidthRequest="250"/>
+    <Entry Placeholder="haslo" FontSize="26" MinimumWidthRequest="250"/>
+    <Button x:Name="btnLogowanie" Text="Zaloguj" Clicked="btnLogowanie_Clicked" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" FontSize="26" MinimumWidthRequest="200"/>
+  </StackLayout>
+</ContentPage>

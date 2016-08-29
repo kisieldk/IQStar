@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="IQStar.View.ListaOdznak"
+             Title="Odznaki">
+  <ListView x:Name="Odznaki" ItemsSource="{Binding ListaOdznak}" ItemTapped="ListViewItemTapped" SeparatorColor="White" HasUnevenRows="True">
+    <ListView.ItemTemplate>
+      <DataTemplate>
+        <ViewCell>
+                        <StackLayout  Orientation="Vertical" VerticalOptions="FillAndExpand" Padding="10">
+                          <StackLayout Orientation="Horizontal" Padding="10">
+                                <Image Source="odznaki.png" />
+                            <StackLayout Orientation="Vertical" Padding="10">
+                                  <Label Text="{Binding NazwaOdznaki}" TextColor="#f35e20" FontSize="24"/>
+                                  <Label Text="Zdobyte!"  HorizontalOptions="EndAndExpand" TextColor="Yellow" IsVisible="{Binding Zdobyta}" FontSize="18"/>                               
+                              </StackLayout>   
+                            </StackLayout>
+                          <StackLayout Orientation="Vertical" Padding="10">
+                            <Label Text="{Binding Opis}" TextColor="White" FontSize="24"/>
+                          </StackLayout>
+                            <StackLayout Orientation="Vertical" Padding="10">
+                            <ProgressBar Progress="{Binding Postep}"/>
+                            </StackLayout>
+                        </StackLayout>
+                    </ViewCell>
+      </DataTemplate>
+    </ListView.ItemTemplate>
+  </ListView>
+</ContentPage>

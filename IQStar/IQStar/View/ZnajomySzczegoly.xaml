@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="IQStar.View.ZnajomySzczegoly"
+             Title="{Binding Login, StringFormat='Znajomy: {0}'}">
+  <StackLayout  Orientation="Vertical" VerticalOptions="FillAndExpand" Padding="10" HorizontalOptions="CenterAndExpand">
+    <StackLayout Orientation="Vertical" Padding="10"  HorizontalOptions="CenterAndExpand">
+      <StackLayout Orientation="Horizontal" Padding="10">
+        <Image Source="wyzwij.png" />
+        <Label Text="{Binding Login}" TextColor="#f35e20" FontSize="24"/>
+      </StackLayout>
+      <StackLayout Orientation="Vertical" Padding="10">
+        <Label Text="{Binding OstatniKonwersacja, StringFormat='Data ostatniej rozmowy: {0}'}"  HorizontalOptions="StartAndExpand" TextColor="White" FontSize="16"/>
+        <Button x:Name="btnKonwersacja" Text="Konwersacja" TextColor="Black" BackgroundColor="White" FontSize="24" Clicked="OnButtonClicked"/>
+      </StackLayout>
+    </StackLayout>
+  </StackLayout>
+</ContentPage>

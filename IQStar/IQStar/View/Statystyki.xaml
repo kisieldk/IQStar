@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="IQStar.View.Statystyki">
+  <StackLayout  Orientation="Vertical" VerticalOptions="FillAndExpand" Padding="10" HorizontalOptions="CenterAndExpand">
+    <StackLayout Orientation="Vertical" Padding="10"  HorizontalOptions="CenterAndExpand">
+      <StackLayout Orientation="Horizontal" Padding="10">
+        <Label Text="Twoje statystyki " TextColor="White" FontSize="26"/>
+      </StackLayout>
+      <StackLayout Orientation="Horizontal" Padding="10">
+        <Image Source="statystyki.png" />
+        <Label Text="jaTest" TextColor="#f35e20" FontSize="24"/>
+      </StackLayout>
+      <StackLayout Orientation="Horizontal" Padding="10">
+        <Label Text="Punkty: " TextColor="White" FontSize="20"/>
+        <Label Text="300" TextColor="#f35e20" FontSize="20"/>
+      </StackLayout>
+      <StackLayout Orientation="Horizontal" Padding="10">
+        <Label Text="Liczba gier: " TextColor="White" FontSize="20"/>
+        <Label Text="25" TextColor="#f35e20" FontSize="20"/>
+      </StackLayout>
+      <StackLayout Orientation="Horizontal" Padding="10">
+        <Label Text="Wygrane gry: " TextColor="White" FontSize="20"/>
+        <Label Text="10" TextColor="#f35e20" FontSize="20"/>
+      </StackLayout>
+      <StackLayout Orientation="Horizontal" Padding="10">
+        <Label Text="Przegrane gry: " TextColor="White" FontSize="20"/>
+        <Label Text="10" TextColor="#f35e20" FontSize="20"/>
+      </StackLayout>
+      <StackLayout Orientation="Horizontal" Padding="10">
+        <Label Text="Remisy: " TextColor="White" FontSize="20"/>
+        <Label Text="5" TextColor="#f35e20" FontSize="20"/>
+      </StackLayout>
+    </StackLayout>
+  </StackLayout>
+</ContentPage>

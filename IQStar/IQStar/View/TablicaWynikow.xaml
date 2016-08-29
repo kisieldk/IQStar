@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="IQStar.View.TablicaWynikow"
+             Title="Tablica wyników">
+  <ListView x:Name="Wyniki" ItemsSource="{Binding ListaUzytkownikow}"  ItemTapped="ListViewItemTapped" SeparatorColor="White" HasUnevenRows="True">
+    <ListView.ItemTemplate>
+      <DataTemplate>
+        <ViewCell>
+          <StackLayout  Orientation="Vertical" VerticalOptions="FillAndExpand" HorizontalOptions="Center" Padding="10">
+            <StackLayout Orientation="Horizontal" Padding="10">
+              <Image Source="{Binding PozycjaIco}" />
+              <StackLayout Orientation="Vertical" Padding="10">
+                <Label Text="{Binding Login}" TextColor="#f35e20" FontSize="24"/>
+                <Label Text="{Binding Punkty, StringFormat='Liczba punktów: {0}'}"  HorizontalOptions="StartAndExpand" TextColor="White"  FontSize="18"/>
+                <Label Text="{Binding LiczbaGrier, StringFormat='Liczba gier: {0}'}"  HorizontalOptions="StartAndExpand" TextColor="White"  FontSize="16"/>
+              </StackLayout>
+            </StackLayout>
+          </StackLayout>
+        </ViewCell>
+      </DataTemplate>
+    </ListView.ItemTemplate>
+  </ListView>
+</ContentPage>
